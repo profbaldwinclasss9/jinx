@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Family Project</title>
+        <meta name="description" content="Family Project">
+        <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+    </head>
+    <body>
+        
+<!-- Below is the scene. It is the workspace to edit the code. -->
+        
+        <a-scene>
+
+<!-- The assets is where you are going to put all your tools - images, videos, objects, etc. Below there are 20 images for you twenty family photos. Images 2 through 20 are commented out. -->
+            
+            <a-assets>
+                
+<!-- The twenty images below are the family photes displayed -->
+                <img id="one" src="1.jpg">
+                <img id="two" src="2.jpg">
+                <img id="three" src="3.jpg">
+                <img id="four" src="4.jpg">
+                <img id="five" src="5.jpg">
+                <img id="six" src="6.jpg">
+                <img id="seven" src="7.jpg">
+                <img id="eight" src="8.jpg">
+                <img id="nine" src="9.jpg">
+                <img id="ten" src="10.jpg">
+                <img id="eleven" src="11.jpg">
+                <img id="twelve" src="12.jpg">
+                <img id="thirteen" src="13.jpg">
+                <img id="fourteen" src="14.jpg">
+                <img id="fifteen" src="15.jpg">
+                <img id="sixteen" src="16.jpg">
+                <img id="seventeen" src="17.jpg">
+                <img id="eighteen" src="18.jpg">
+                <img id="nineteen" src="19.jpg">
+                <img id="twenty" src="20.jpg">
+                
+<!-- The image below is the background. Change the src, or sources, to change the photo.
+
+TRY IT: Change "office.jpg" to "woods.jpg"
+-->
+                <img id="background" src="office.jpg">
+                
+            
+            </a-assets>
+            
+<!-- Entities are the objects that are going to show up. -->
+            <a-entity>
+                
+<!-- The objects that show up here are CURVED IMAGES. The sources are the images above. -->
+                <a-curvedimage src="#one" height="4.0" radius="10" theta-length="40"
+                     rotation="0 0 0" position="0 -15 0" scale="3 3 3"></a-curvedimage>
+                <a-curvedimage src="#two" height="4.0" radius="10" theta-length="40"
+                     rotation="0 -50 0" position="0 -15 0" scale="3 3 3"></a-curvedimage>
+                <a-curvedimage src="#three" height="4.0" radius="10" theta-length="40"
+                     rotation="0 -100 0" position="0 -15 0" scale="3 3 3"></a-curvedimage>
+                <a-curvedimage src="#four" height="4.0" radius="10" theta-length="40"
+                     rotation="0 -150 0" position="0 -15 0" scale="3 3 3"></a-curvedimage>
+                <a-curvedimage src="#five" height="4.0" radius="10" theta-length="40"
+                     rotation="0 -200 0" position="0 -15 0" scale="3 3 3"></a-curvedimage>
+                <a-curvedimage src="#six" height="4.0" radius="10" theta-length="40"
+                     rotation="0 -250 0" position="0 -15 0" scale="3 3 3"></a-curvedimage>
+                <a-curvedimage src="#seven" height="4.0" radius="10" theta-length="40"
+                     rotation="0 -300 0" position="0 -15 0" scale="3 3 3"></a-curvedimage>
+                <a-curvedimage src="#eight" height="4.0" radius="10" theta-length="40"
+                     rotation="0 25 0" position="0 0 0 " scale="3 3 3"></a-curvedimage>
+                <a-curvedimage src="#nine" height="4.0" radius="10" theta-length="40"
+                     rotation="0 -25 0" position="0 0 0" scale="3 3 3"></a-curvedimage>
+                <a-curvedimage src="#ten" height="4.0" radius="10" theta-length="40"
+                     rotation="0 -75 0" position="0 0 0" scale="3 3 3"></a-curvedimage>
+                <a-curvedimage src="#eleven" height="4.0" radius="10" theta-length="40"
+                     rotation="0 -125 0" position="0 0 0" scale="3 3 3"></a-curvedimage>
+                <a-curvedimage src="#twelve" height="4.0" radius="10" theta-length="40"
+                     rotation="0 -175 0" position="0 0 0" scale="3 3 3"></a-curvedimage>
+                <a-curvedimage src="#thirteen" height="4.0" radius="10" theta-length="40"
+                     rotation="0 -225 0" position="0 0 0" scale="3 3 3"></a-curvedimage>
+                <a-curvedimage src="#fourteen" height="4.0" radius="10" theta-length="40"
+                     rotation="0 -275 0" position="0 0 0" scale="3 3 3"></a-curvedimage>
+                <a-curvedimage src="#fifteen" height="4.0" radius="10" theta-length="40"
+                     rotation="0 0 0" position="0 15 0" scale="3 3 3"></a-curvedimage>
+                <a-curvedimage src="#sixteen" height="4.0" radius="10" theta-length="40"
+                     rotation="0 -50 0" position="0 15 0" scale="3 3 3"></a-curvedimage>
+                <a-curvedimage src="#seventeen" height="4.0" radius="10" theta-length="40"
+                     rotation="0 -100 0" position="0 15 0" scale="3 3 3"></a-curvedimage>
+                <a-curvedimage src="#eighteen" height="4.0" radius="10" theta-length="40"
+                     rotation="0 -150 0" position="0 15 0" scale="3 3 3"></a-curvedimage>
+                <a-curvedimage src="#nineteen" height="4.0" radius="10" theta-length="40"
+                     rotation="0 -200 0" position="0 15 0" scale="3 3 3"></a-curvedimage>
+                <a-curvedimage src="#twenty" height="4.0" radius="10" theta-length="40"
+                     rotation="0 -250 0" position="0 15 0" scale="3 3 3"></a-curvedimage>
+            </a-entity>
+              
+<!-- This is the camera. Will shift position from which you are viewing. Change the number 5 in position to change the height, and the 0's to different numbers and see how that changes the camera position. -->
+            <a-camera position="0 5 0"><a-cursor color="#FF0000"></a-cursor></a-camera>
+            
+<!-- This is the sky. Images are turned into a globe. Will be the background. Change this by changing the source of the image in the assets.
+-->
+            <a-sky src="#background" rotation="0 0 0" segments-width="1000" theta-length="1000"></a-sky>
+            
+        </a-scene>
+            
+    </body>
+</html>
